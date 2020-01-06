@@ -11,7 +11,7 @@ public class Employee {
 	}
 
 	public Employee() {
-		super();
+		
 		
 	}
 	private  String employeeId;

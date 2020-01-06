@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.employee.api.service.EmployeeService;
 import com.employee.api.service.impl.EmployeeServiceImpl;
 import com.empolyee.api.model.Employee;
+import com.empolyee.api.model.EmployeeList;
 @RestController
 public class EmployeeController {
 	
@@ -17,13 +18,14 @@ public class EmployeeController {
 
 	
 	@RequestMapping("/employee")
-	public List<Employee> getEmployees() {
-		return employService.getAllEmployees();
-	}
-	
-	public Employee getEmployee(String id) {
-		return employService.getEmployeeById(id);
+	public EmployeeList getEmployees() {
+		return new EmployeeList( employService.getAllEmployees());
 		
 	}
+	
+//	public EmployeeList getEmployee(String id) {
+//		return new EmployeeList( employService.getEmployeeById(id));
+//		
+//	}
 	
 }
