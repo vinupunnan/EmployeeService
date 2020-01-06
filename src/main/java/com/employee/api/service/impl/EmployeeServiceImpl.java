@@ -13,8 +13,8 @@ import com.empolyee.api.model.Employee;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-	private  List<Employee> employees= 
-			Arrays.asList(new Employee("A001","Anu","Manager","1"),new Employee("A002","Anju","Clerk","1"),new Employee("A001","Amar","Senior dev","1"));
+	//private  List<Employee> employees= 
+		//	Arrays.asList(new Employee("A001","Anu","Manager","1"),new Employee("A002","Anju","Clerk","1"),new Employee("A001","Amar","Senior dev","1"));
 	@Autowired
 	EmployeeDAO employeeDao;
 	@Override

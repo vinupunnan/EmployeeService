@@ -14,7 +14,7 @@ import com.empolyee.api.model.EmployeeList;
 public class EmployeeController {
 	
 	@Autowired
-	private EmployeeServiceImpl employService;
+	private EmployeeService employService;
 
 	
 	@RequestMapping("/employee")

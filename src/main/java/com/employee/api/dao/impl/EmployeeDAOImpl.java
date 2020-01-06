@@ -49,6 +49,7 @@ public class EmployeeDAOImpl extends  JdbcDaoSupport implements EmployeeDAO {
 				emp.setEmployeeId((String)row.get("emp_Id"));
 				emp.setEmpName((String)row.get("emp_name"));
 				emp.setEmpDesignation((String)row.get("emp_desig"));
+				emp.setDepId((String)row.get("dept_id"));
 				result.add(emp);
 			}
 			
