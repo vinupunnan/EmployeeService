@@ -26,9 +26,12 @@ public class EmployeeDAOImpl extends  JdbcDaoSupport implements EmployeeDAO {
 	}
 	
 	@Override
-	public void insertEmployee(Employee cus) {
-		// TODO Auto-generated method stub
-		
+	public void insertEmployee(Employee emp) {
+		String sql = "INSERT INTO employee " +
+				"(emp_id,emp_name,emp_desig,dept_id) VALUES (?, ?,?,?)" ;
+		getJdbcTemplate().update(sql, new Object[]{
+				emp.getEmployeeId(), emp.getEmpName(),emp.getEmpDesignation(),emp.getDepId()
+		});
 	}
 
 	@Override
