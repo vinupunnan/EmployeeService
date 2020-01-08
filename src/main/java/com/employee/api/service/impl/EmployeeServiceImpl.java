@@ -43,7 +43,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public Employee getEmployeeById(String empid) {
 		// TODO Auto-generated method stub
-		return new Employee();
+		Employee emp = employeeDao.getEmployeeById(empid);
+		return emp;
 	}
 
 }

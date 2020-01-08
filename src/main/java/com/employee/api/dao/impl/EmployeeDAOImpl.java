@@ -64,8 +64,8 @@ public class EmployeeDAOImpl extends  JdbcDaoSupport implements EmployeeDAO {
 
 	@Override
 	public Employee getEmployeeById(String empId) {
-		// TODO Auto-generated method stub
 		return null;
+		
 	}
 
 }
